@@ -1,0 +1,1231 @@
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hans McMurdy </title>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <!-- stalk me google -->
+    <meta name="revisit-after" content="1 days">
+    
+    <meta name="distribution" content="web">
+    
+    <meta name="description" content="Hans McMurdy Front-end Developer">
+    
+    <meta name="author" content="Hans McMurdy">
+    
+    <link rel="canonical" href="http://hansmcmurdy.com" /> 
+    
+    
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.0/firebase.js"></script>
+  </head>
+  <body>
+
+	<div class="off-canvas-wrapper">
+	  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+	    <div class="off-canvas position-right" id="off-canvas" data-off-canvas data-position="right">
+	      <ul id="menu-main" class="vertical menu" data-accordion-menu>
+	        <li class="menu-item menu-item-has-children">
+	          <a href="blog.html">Blog</a>
+	        </li>
+	        <!-- Blog -->
+	      <!--   <li class="menu-item menu-item-has-children">
+	          <a href="#">Blog</a>
+	          <ul class="vertical nested menu">
+	            <li class="menu-item">
+	              <a href="blog.html" class="text-center" style="line-height: 2;"> 
+	                Recent 
+	                <img class="thumbnail" src="assets/img/f6-template-news-mag.svg">
+	              </a>
+	            </li>
+	            <li class="menu-item">
+	              <a href="real-estate.html" class="text-center" style="line-height: 2;"> 
+	                Real Estate 
+	                <img class="thumbnail" src="assets/img/f6-template-realestate.svg">
+	              </a>
+	            </li>
+	            <li class="menu-item">
+	              <a href="ecommerce.html" class="text-center" style="line-height: 2;"> 
+	                Ecommerce 
+	                <img class="thumbnail" src="assets/img/foundation6-templates-ecommerce.svg">
+	              </a>
+	            </li>
+	            <li class="menu-item">
+	              <a href="agency.html" class="text-center" style="line-height: 2;"> 
+	                Agency 
+	                <img class="thumbnail" src="assets/img/foundation6-templates-agency.svg">
+	              </a>
+	            </li>
+	            <li class="menu-item">
+	              <a href="blog.html" class="text-center" style="line-height: 2;"> 
+	                Blog Sidebar 
+	                <img class="thumbnail" src="assets/img/foundation6-templates-blog-sidebar.svg">
+	              </a>
+	            </li>
+	          </ul>
+	        </li> -->
+	      <!--   <li class="menu-item menu-item-has-children">
+	          <a href="#">Templates</a>
+	          <ul class="vertical nested menu">
+	            <li class="menu-item">
+	              <a href="blog.html" class="text-center" style="line-height: 2;"> 
+	                blog 
+	                <img class="thumbnail" src="assets/img/f6-template-news-mag.svg">
+	              </a>
+	            </li>
+	            <li class="menu-item">
+	              <a href="real-estate.html" class="text-center" style="line-height: 2;"> 
+	                Real Estate 
+	                <img class="thumbnail" src="assets/img/f6-template-realestate.svg">
+	              </a>
+	            </li>
+	            <li class="menu-item">
+	              <a href="ecommerce.html" class="text-center" style="line-height: 2;"> 
+	                Ecommerce 
+	                <img class="thumbnail" src="assets/img/foundation6-templates-ecommerce.svg">
+	              </a>
+	            </li>
+	            <li class="menu-item">
+	              <a href="agency.html" class="text-center" style="line-height: 2;"> 
+	                Agency 
+	                <img class="thumbnail" src="assets/img/foundation6-templates-agency.svg">
+	              </a>
+	            </li>
+	            <li class="menu-item">
+	              <a href="blog.html" class="text-center" style="line-height: 2;"> 
+	                Blog Sidebar 
+	                <img class="thumbnail" src="assets/img/foundation6-templates-blog-sidebar.svg">
+	              </a>
+	            </li>
+	            <li class="menu-item">
+	              <a href="blog-column.html" class="text-center" style="line-height: 2;"> 
+	                Blog Column 
+	                <img class="thumbnail" src="assets/img/foundation6-templates-blog-column.svg">
+	              </a>
+	            </li>
+	            <li class="menu-item">
+	              <a href="portfolio.html" class="text-center" style="line-height: 2;"> 
+	                Portfolio 
+	                <img class="thumbnail" src="assets/img/foundation6-templates-portfolio.svg">
+	              </a>
+	            </li>
+	            <li class="menu-item">
+	              <a href="product-page.html" class="text-center" style="line-height: 2;"> 
+	                Product Page 
+	                <img class="thumbnail" src="assets/img/foundation6-templates-product-page.svg">
+	              </a>
+	            </li>
+	          </ul>
+	        </li> -->
+	      
+	      </ul>
+	    </div>
+	    <div class="off-canvas-content" data-off-canvas-content >
+	      <header class="header" role="banner">
+	        <!-- This navs will be applied to the topbar, above all content 
+	          To see additional nav styles, visit the /parts directory -->
+	        <!-- By default, this menu will use off-canvas for small
+	          and a topbar for medium-up -->
+	        <div class="top-bar" id="top-bar-menu">
+	          <div class="top-bar-left float-left">
+	            <ul class="menu">
+	              <li class="menu-text">
+	              <div class="small-12 text-center">
+	                <span class="uppercase">H</span>
+	                <span class="uppercase">A</span>
+	                <span class="uppercase">N</span>
+	                <span class="uppercase">S</span>
+	              </div>
+	              <div class="small-12">                
+	                <span class="uppercase">M</span>
+	                <span class="uppercase">C</span>
+	                <span class="uppercase">M</span>
+	                <span class="uppercase">U</span>
+	                <span class="uppercase">R</span>
+	                <span class="uppercase">D</span>
+	                <span class="uppercase">Y</span>
+	              </div>
+	              </li>
+	            </ul>
+	          </div>
+
+	            <div class="top-bar-right show-for-medium">
+	              <ul id="menu-main-1" class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
+	                <!-- <li class="menu-item"><a href="blog.html">blog</a></li> -->
+	            
+	            	      <li class="menu-item">
+	            	        <a href="blog.html" class="menu-item"> 
+	            	          Blog 
+	            	        </a>
+	            	      </li>
+	            
+	              </ul>
+	            </div>
+	            
+	            
+
+	          <div class="top-bar-right float-right show-for-small-only">
+	            <ul class="menu">
+	              <li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li>
+	            </ul>
+	          </div>
+
+	        </div>
+	      </header>
+	      <!-- end .header -->      
+	      <div id="content">
+	        <div id="inner-content" class="">
+	          
+	          <div class="row">
+	            <div class="large-12 columns">
+	              <h1 class="text-center">Welcome to my website</h1>
+	              <h2 class="text-center">It's underdevelopment, give me a sec...</h2>
+	            </div>
+	          </div> 
+	          
+	          <div class="row full-row">
+	          	<h1 class="text-center">Services</h1>
+	          </div>
+	          
+	          <div class="row full-row align-middle projects">
+	          	<div class="columns small-6 medium-4 quad quad-1" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">
+	          		Web Development
+	          		<br>
+	          		</p>
+	          		<div class="button expanded hollow" data-cta-target=".service-modal-1"> Learn More</div>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          	<div class="columns small-6 medium-4 quad quad-2" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">User Experiance</p>
+	          		<div class="button expanded hollow" data-cta-target=".service-modal-2"> Learn More</div>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          	<div class="columns small-12 medium-4 quad quad-3" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Digital Marketing</p>
+	          		<div class="button expanded hollow" data-cta-target=".service-modal-3"> Learn More</div>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          </div>
+	          
+	          
+	          <div class="service-modal-1  modal ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1 class="text-center modal-title">Web Design</h1>
+	          
+	            <div class="pricing-table-container row">
+	              <ul class="cd-pricing">
+	                <li class="cd-pricing-column wp wp-5">
+	                  <header class="cd-pricing-header">
+	                    <h2 class="text-center">Consultation</h2>
+	                    <div class="cd-price">
+	                      <span class="price">$100</span>
+	                      <span class="rate">hour</span>
+	                    </div>
+	                  </header>
+	                  <div class="pricing-features">
+	                    <ul>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 1</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 2</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 3</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 4</em>
+	                      </li>
+	                    </ul>
+	                  </div>
+	                  <div class="row cd-pricing-footer">
+	                    <div class="small-6 small-centered columns">
+	                      <a href="#0" class="button round expanded large round hollow" >Select</a>
+	                    </div>
+	                  </div>
+	                  <!-- <footer class="cd-pricing-footer">
+	                    <a href="#0" class="button round large hollow" >Select</a>
+	                  </footer> -->
+	                </li>
+	                <li class="cd-pricing-column none">
+	                  <header class="cd-pricing-header">
+	                    <h2 class="text-center">Contract</h2>
+	                    <div class="cd-price">
+	                      <span class="price">$20</span>
+	                      <span class="rate">hour</span>
+	                    </div>
+	                  </header>
+	                  <div class="pricing-features">
+	                    <ul>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 1</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 2</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 3</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 4</em>
+	                      </li>
+	                    </ul>
+	                  </div>
+	                  <div class="row cd-pricing-footer">
+	                    <div class="small-6 small-centered columns">
+	                      <a href="#0" class="button round expanded large round hollow" >Select</a>
+	                    </div>
+	                  </div>
+	                  <!-- <footer class="cd-pricing-footer">
+	                    <a href="#0" class="button round large hollow" >Select</a>
+	                  </footer> -->
+	                </li>
+	                <li class="cd-pricing-column wp wp-6">
+	                  <header class="cd-pricing-header">
+	                    <h2 class="text-center">Custom Theme</h2>
+	                    <div class="cd-price">
+	                      <span class="price">$1000</span>
+	                      <span class="rate">month</span>
+	                    </div>
+	                  </header>
+	                  <div class="pricing-features">
+	                    <ul>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 1</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 2</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 3</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 4</em>
+	                      </li>
+	                    </ul>
+	                  </div>
+	                  <div class="row cd-pricing-footer">
+	                    <div class="small-6 small-centered columns">
+	                      <a href="#0" class="button round expanded large round hollow" >Select</a>
+	                    </div>
+	                  </div>
+	                  <!-- <footer class="cd-pricing-footer">
+	                    <a href="#0" class="button round large hollow" >Select</a>
+	                  </footer> -->
+	                </li>
+	              </ul> 
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	              <div class="cd-form">
+	                
+	                <div class="cd-plan-info">
+	                  <!-- content will be loaded using jQuery - according to the selected plan -->
+	                </div>
+	            
+	                <div class="cd-more-info">
+	                  <h3>Need help?</h4>
+	                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	                </div>
+	                
+	                <form action="">
+	                  <fieldset class="">
+	                    <legend class="">Account Info</legend>
+	                    
+	                    <div class="half-width">
+	                      <label for="userName">Name</label>
+	                      <input type="text" id="userName" name="userName">
+	                    </div>
+	                    
+	                    <div class="half-width">
+	                      <label for="userEmail">Email</label>
+	                      <input type="email" id="userEmail" name="userEmail">
+	                    </div>
+	                    
+	                    <div class="half-width">
+	                      <label for="userPassword">Password</label>
+	                      <input type="password" id="userPassword" name="userPassword">
+	                    </div>
+	                    
+	                    <div class="half-width">
+	                      <label for="userPasswordRepeat">Repeat Password</label>
+	                      <input type="password" id="userPasswordRepeat" name="userPasswordRepeat">
+	                    </div>
+	                  </fieldset>
+	            
+	                  <fieldset class="">
+	                    <legend class="">Payment Method</legend>
+	                    <div>
+	                      <ul class="cd-payment-gateways">
+	                        <div class="row">
+	                          <div class="column small-6">
+	                            <input type="radio" name="payment-method" id="paypal" value="paypal">
+	                            <label for="paypal">Paypal</label>
+	                          </div>
+	                          <div class="column small-6">
+	                            <input type="radio" name="payment-method" id="card" value="card" checked>
+	                          <label for="card">Card</label>
+	                          </div>
+	                        </div>
+	                      </ul> 
+	                      <!-- .cd-payment-gateways -->
+	                    </div>
+	                    
+	                    <div class="cd-paypal"></div>
+	            
+	                    <div class="cd-credit-card">
+	                      <div class="row">
+	            
+	                        <p class=" columns small-12">
+	                          <label for="cardNumber">Card Number</label>
+	                          <input type="text" id="cardNumber" name="cardNumber">
+	                        </p>
+	            
+	            
+	                        <div class="columns small-12">
+	                          
+	                        </div>
+	                          <p class="half-width columns small-6">
+	                            <label>Expiration date</label>
+	                            <b>
+	                              <span class="cd-select  columns small-6 medium-6">
+	                                <select name="card-expiry-month" id="card-expiry-month">
+	                                  <option value="1">1</option>
+	                                  <option value="1">2</option>
+	                                  <option value="1">3</option>
+	                                  <option value="1">4</option>
+	                                  <option value="1">5</option>
+	                                  <option value="1">6</option>
+	                                  <option value="1">7</option>
+	                                  <option value="1">8</option>
+	                                  <option value="1">9</option>
+	                                  <option value="1">10</option>
+	                                  <option value="1">11</option>
+	                                  <option value="1">12</option>
+	                                </select>
+	                              </span>
+	            
+	                              <span class="cd-select columns small-6 medium-6">
+	                                <select name="card-expiry-year" id="card-expiry-year">
+	                                  <option value="2015">2015</option>
+	                                  <option value="2015">2016</option>
+	                                  <option value="2015">2017</option>
+	                                  <option value="2015">2018</option>
+	                                  <option value="2015">2019</option>
+	                                  <option value="2015">2020</option>
+	                                </select>
+	                              </span>
+	                            </b>
+	                          </p>
+	                          
+	                          <p class="half-width columns small-6">
+	                            <label for="cardCvc">Card CVC</label>
+	                            <input type="text" id="cardCvc" name="cardCvc">
+	                          </p>
+	            
+	                      </div>
+	                    </div> 
+	                    <!-- .cd-credit-card -->
+	                  </fieldset>
+	                  
+	                  <fieldset>
+	                    <div>
+	                      <input type="submit" value="Get started" class="button hollow expanded">
+	                    </div>
+	                  </fieldset>
+	                </form>
+	            
+	                <a href="#0" class="cd-close">
+	                  <i class="fi-x"></i>
+	                </a>
+	              </div> <!-- .cd-form -->
+	              
+	              <div class="cd-overlay"></div> 
+	            </div>
+	          
+	          </div>
+	          
+	          <div class="service-modal-2  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1>Digital Marketing</h1>
+	          	<br><br>
+	            <div class="pricing-table-container row">
+	              <ul class="cd-pricing">
+	                <li class="cd-pricing-column wp wp-5">
+	                  <header class="cd-pricing-header">
+	                    <h2 class="text-center">Basic</h2>
+	                    <div class="cd-price ">
+	                      <span class="">$9.99</span>
+	                      <span class="">hourly</span>
+	                    </div>
+	                  </header>
+	                  <div class="pricing-features">
+	                    <ul>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 1</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 2</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 3</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 4</em>
+	                      </li>
+	                    </ul>
+	                  </div>
+	                  <footer class="cd-pricing-footer">
+	                    <a href="#" class="" >Select</a>
+	                  </footer>
+	                </li>
+	                <li class="cd-pricing-column none">
+	                  <header class="cd-pricing-header">
+	                    <h2 class="text-center">Popular</h2>
+	                    <div class="cd-price ">
+	                      <span class="">$19.99</span>
+	                      <span class="">hourly</span>
+	                    </div>
+	                  </header>
+	                  <div class="pricing-features">
+	                    <ul>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 1</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 2</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 3</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 4</em>
+	                      </li>
+	                    </ul>
+	                  </div>
+	                  <footer class="cd-pricing-footer">
+	                    <a href="#" class="" >Select</a>
+	                  </footer>
+	                </li>
+	                <li class="cd-pricing-column wp wp-6">
+	                  <header class="cd-pricing-header">
+	                    <h2 class="text-center">Full Service</h2>
+	                    <div class="cd-price ">
+	                      <span class="">$500</span>
+	                      <span class="">month</span>
+	                    </div>
+	                  </header>
+	                  <div class="pricing-features">
+	                    <ul>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">SEO</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Photo Shoot</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Video Marketing</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 4</em>
+	                      </li>
+	                    </ul>
+	                  </div>
+	                  <footer class="cd-pricing-footer">
+	                    <a href="#" class="" >Select</a>
+	                  </footer>
+	                </li>
+	              </ul> 
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	              <div class="cd-form">
+	                
+	                <div class="cd-plan-info">
+	                  <!-- content will be loaded using jQuery - according to the selected plan -->
+	                </div>
+	            
+	                <div class="cd-more-info">
+	                  <h3>Need help?</h4>
+	                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	                </div>
+	                
+	                <form action="">
+	                  <fieldset class="">
+	                    <legend class="">Account Info</legend>
+	                    
+	                    <div class="half-width">
+	                      <label for="userName">Name</label>
+	                      <input type="text" id="userName" name="userName">
+	                    </div>
+	                    
+	                    <div class="half-width">
+	                      <label for="userEmail">Email</label>
+	                      <input type="email" id="userEmail" name="userEmail">
+	                    </div>
+	                    
+	                    <div class="half-width">
+	                      <label for="userPassword">Password</label>
+	                      <input type="password" id="userPassword" name="userPassword">
+	                    </div>
+	                    
+	                    <div class="half-width">
+	                      <label for="userPasswordRepeat">Repeat Password</label>
+	                      <input type="password" id="userPasswordRepeat" name="userPasswordRepeat">
+	                    </div>
+	                  </fieldset>
+	            
+	                  <fieldset class="">
+	                    <legend class="">Payment Method</legend>
+	                    <div>
+	                      <ul class="cd-payment-gateways">
+	                        <div class="row">
+	                          <div class="column small-6">
+	                            <input type="radio" name="payment-method" id="paypal" value="paypal">
+	                            <label for="paypal">Paypal</label>
+	                          </div>
+	                          <div class="column small-6">
+	                            <input type="radio" name="payment-method" id="card" value="card" checked>
+	                          <label for="card">Card</label>
+	                          </div>
+	                        </div>
+	                      </ul> 
+	                      <!-- .cd-payment-gateways -->
+	                    </div>
+	                    
+	                    <div class="cd-paypal"></div>
+	            
+	                    <div class="cd-credit-card">
+	                      <div class="row">
+	            
+	                        <p class=" columns small-12">
+	                          <label for="cardNumber">Card Number</label>
+	                          <input type="text" id="cardNumber" name="cardNumber">
+	                        </p>
+	            
+	            
+	                        <div class="columns small-12">
+	                          
+	                        </div>
+	                          <p class="half-width columns small-6">
+	                            <label>Expiration date</label>
+	                            <b>
+	                              <span class="cd-select  columns small-6 medium-6">
+	                                <select name="card-expiry-month" id="card-expiry-month">
+	                                  <option value="1">1</option>
+	                                  <option value="1">2</option>
+	                                  <option value="1">3</option>
+	                                  <option value="1">4</option>
+	                                  <option value="1">5</option>
+	                                  <option value="1">6</option>
+	                                  <option value="1">7</option>
+	                                  <option value="1">8</option>
+	                                  <option value="1">9</option>
+	                                  <option value="1">10</option>
+	                                  <option value="1">11</option>
+	                                  <option value="1">12</option>
+	                                </select>
+	                              </span>
+	            
+	                              <span class="cd-select columns small-6 medium-6">
+	                                <select name="card-expiry-year" id="card-expiry-year">
+	                                  <option value="2015">2015</option>
+	                                  <option value="2015">2016</option>
+	                                  <option value="2015">2017</option>
+	                                  <option value="2015">2018</option>
+	                                  <option value="2015">2019</option>
+	                                  <option value="2015">2020</option>
+	                                </select>
+	                              </span>
+	                            </b>
+	                          </p>
+	                          
+	                          <p class="half-width columns small-6">
+	                            <label for="cardCvc">Card CVC</label>
+	                            <input type="text" id="cardCvc" name="cardCvc">
+	                          </p>
+	            
+	                      </div>
+	                    </div> 
+	                    <!-- .cd-credit-card -->
+	                  </fieldset>
+	                  
+	                  <fieldset>
+	                    <div>
+	                      <input type="submit" value="Get started" class="button hollow expanded">
+	                    </div>
+	                  </fieldset>
+	                </form>
+	            
+	                <a href="#0" class="cd-close">
+	                  <i class="fi-x"></i>
+	                </a>
+	              </div> <!-- .cd-form -->
+	              
+	              <div class="cd-overlay"></div> 
+	            </div>
+	          </div>
+	          
+	          
+	          <div class="service-modal-3  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1>Digital Marketing</h1>
+	            <div class="pricing-table-container row">
+	              <ul class="cd-pricing">
+	                <li class="cd-pricing-column wp wp-5">
+	                  <header class="cd-pricing-header">
+	                    <h2 class="text-center">Research</h2>
+	                    <div class="cd-price text-center">
+	                      <span>$9.99</span>
+	                      <span>hourly</span>
+	                    </div>
+	                  </header>
+	                  <div class="pricing-features">
+	                    <ul>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 1</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 2</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 3</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 4</em>
+	                      </li>
+	                    </ul>
+	                  </div>
+	                  <footer class="cd-pricing-footer">
+	                    <a href="#0" class="button round large hollow" >Select</a>
+	                  </footer>
+	                </li>
+	                <li class="cd-pricing-column none">
+	                  <header class="cd-pricing-header">
+	                    <h2 class="text-center">Website</h2>
+	                    <div class="cd-price text-center">
+	                      <span>$19.99</span>
+	                      <span>month</span>
+	                    </div>
+	                  </header>
+	                  <div class="pricing-features">
+	                    <ul>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 1</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 2</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 3</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-x"></em>
+	                        <em class="feature">Feature 4</em>
+	                      </li>
+	                    </ul>
+	                  </div>
+	                  <footer class="cd-pricing-footer">
+	                    <a href="#0" class="button round large hollow" >Select</a>
+	                  </footer>
+	                </li>
+	                <li class="cd-pricing-column wp wp-6">
+	                  <header class="cd-pricing-header">
+	                    <h2 class="text-center">Website and Mobile App</h2>
+	                    <div class="cd-price text-center">
+	                      <span>$1000</span>
+	                      <span>month</span>
+	                    </div>
+	                  </header>
+	                  <div class="pricing-features">
+	                    <ul>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">SEO</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Photo Shoot</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Video Marketing</em>
+	                      </li>
+	                      <li class="text-center">
+	                        <em class="fi-check"></em>
+	                        <em class="feature">Feature 4</em>
+	                      </li>
+	                    </ul>
+	                  </div>
+	                  <footer class="cd-pricing-footer">
+	                    <a href="#0" class="button round large hollow" >Select</a>
+	                  </footer>
+	                </li>
+	              </ul> 
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	              <div class="cd-form">
+	                
+	                <div class="cd-plan-info">
+	                  <!-- content will be loaded using jQuery - according to the selected plan -->
+	                </div>
+	            
+	                <div class="cd-more-info">
+	                  <h3>Need help?</h4>
+	                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	                </div>
+	                
+	                <form action="">
+	                  <fieldset class="">
+	                    <legend class="">Account Info</legend>
+	                    
+	                    <div class="half-width">
+	                      <label for="userName">Name</label>
+	                      <input type="text" id="userName" name="userName">
+	                    </div>
+	                    
+	                    <div class="half-width">
+	                      <label for="userEmail">Email</label>
+	                      <input type="email" id="userEmail" name="userEmail">
+	                    </div>
+	                    
+	                    <div class="half-width">
+	                      <label for="userPassword">Password</label>
+	                      <input type="password" id="userPassword" name="userPassword">
+	                    </div>
+	                    
+	                    <div class="half-width">
+	                      <label for="userPasswordRepeat">Repeat Password</label>
+	                      <input type="password" id="userPasswordRepeat" name="userPasswordRepeat">
+	                    </div>
+	                  </fieldset>
+	            
+	                  <fieldset class="">
+	                    <legend class="">Payment Method</legend>
+	                    <div>
+	                      <ul class="cd-payment-gateways">
+	                        <div class="row">
+	                          <div class="column small-6">
+	                            <input type="radio" name="payment-method" id="paypal" value="paypal">
+	                            <label for="paypal">Paypal</label>
+	                          </div>
+	                          <div class="column small-6">
+	                            <input type="radio" name="payment-method" id="card" value="card" checked>
+	                          <label for="card">Card</label>
+	                          </div>
+	                        </div>
+	                      </ul> 
+	                      <!-- .cd-payment-gateways -->
+	                    </div>
+	                    
+	                    <div class="cd-paypal"></div>
+	            
+	                    <div class="cd-credit-card">
+	                      <div class="row">
+	            
+	                        <p class=" columns small-12">
+	                          <label for="cardNumber">Card Number</label>
+	                          <input type="text" id="cardNumber" name="cardNumber">
+	                        </p>
+	            
+	            
+	                        <div class="columns small-12">
+	                          
+	                        </div>
+	                          <p class="half-width columns small-6">
+	                            <label>Expiration date</label>
+	                            <b>
+	                              <span class="cd-select  columns small-6 medium-6">
+	                                <select name="card-expiry-month" id="card-expiry-month">
+	                                  <option value="1">1</option>
+	                                  <option value="1">2</option>
+	                                  <option value="1">3</option>
+	                                  <option value="1">4</option>
+	                                  <option value="1">5</option>
+	                                  <option value="1">6</option>
+	                                  <option value="1">7</option>
+	                                  <option value="1">8</option>
+	                                  <option value="1">9</option>
+	                                  <option value="1">10</option>
+	                                  <option value="1">11</option>
+	                                  <option value="1">12</option>
+	                                </select>
+	                              </span>
+	            
+	                              <span class="cd-select columns small-6 medium-6">
+	                                <select name="card-expiry-year" id="card-expiry-year">
+	                                  <option value="2015">2015</option>
+	                                  <option value="2015">2016</option>
+	                                  <option value="2015">2017</option>
+	                                  <option value="2015">2018</option>
+	                                  <option value="2015">2019</option>
+	                                  <option value="2015">2020</option>
+	                                </select>
+	                              </span>
+	                            </b>
+	                          </p>
+	                          
+	                          <p class="half-width columns small-6">
+	                            <label for="cardCvc">Card CVC</label>
+	                            <input type="text" id="cardCvc" name="cardCvc">
+	                          </p>
+	            
+	                      </div>
+	                    </div> 
+	                    <!-- .cd-credit-card -->
+	                  </fieldset>
+	                  
+	                  <fieldset>
+	                    <div>
+	                      <input type="submit" value="Get started" class="button hollow expanded">
+	                    </div>
+	                  </fieldset>
+	                </form>
+	            
+	                <a href="#0" class="cd-close">
+	                  <i class="fi-x"></i>
+	                </a>
+	              </div> <!-- .cd-form -->
+	              
+	              <div class="cd-overlay"></div> 
+	            </div>
+	          </div>
+	          
+	          <div class="row full-row">
+	          	<h1 class="text-center">Recent Projects</h1>
+	          </div>
+	          
+	          <div class="row full-row align-middle projects">
+	          	<div class="columns small-6 large-3 quad quad-1" data-cta-target=".cta-modal-1" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          	<div class="columns small-6 large-3 quad quad-2" data-cta-target=".cta-modal-2" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          	<div class="columns small-6 large-3 quad quad-3" data-cta-target=".cta-modal-3" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          	<div class="columns small-6 large-3 quad quad-4" data-cta-target=".cta-modal-4" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          </div>
+	          
+	          
+	          <div class="cta-modal-1  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1 class="text-center modal-title">SelfUSNow</h1>
+	          
+	          	<div class="quote-box">
+	          		<div class="quote-box__bubble">
+	          			<div class="quote">"</div>
+	          			lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+	          			lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+	          			<div class="quote">"</div>
+	          		</div>
+	          	</div>
+	          </div>
+	          
+	          
+	          
+	          <div class="cta-modal-2  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1>Share it if you like it</h1>
+	          	<br><br>
+	          </div>
+	          <div class="cta-modal-3  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1>Customary cat!</h1>
+	          	<img src="http://placekitten.com/g/200/300" width="300" alt="">
+	          	<p>You found me :)</p>
+	          </div>
+	          <div class="cta-modal-4  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          
+	          	<h1>Hierarchical timing</h1>
+	          	<div class="quote-box">
+	          		<div class="quote-box__bubble">When building a transition, consider the order and timing of the elements' movement. Ensure that motion supports the information hierarchy, conveying what content is most important by creating a path for the eye to follow.</div>
+	          		<a href="http://www.google.co.in/design/spec/animation/meaningful-transitions.html#meaningful-transitions-hierarchical-timing">Google Material design</a>
+	          	</div>
+	          </div>
+	          <div class="row full-row">
+	          	<h1 class="text-center">Recent Projects</h1>
+	          </div>
+	          
+	          <div class="row full-row align-middle projects">
+	          	<div class="columns small-6 large-3 quad quad-1" data-cta-target=".cta-modal-1" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          	<div class="columns small-6 large-3 quad quad-2" data-cta-target=".cta-modal-2" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          	<div class="columns small-6 large-3 quad quad-3" data-cta-target=".cta-modal-3" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          	<div class="columns small-6 large-3 quad quad-4" data-cta-target=".cta-modal-4" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          </div>
+	          
+	          
+	          <div class="cta-modal-1  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1 class="text-center modal-title">SelfUSNow</h1>
+	          
+	          	<div class="quote-box">
+	          		<div class="quote-box__bubble">
+	          			<div class="quote">"</div>
+	          			lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+	          			lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+	          			<div class="quote">"</div>
+	          		</div>
+	          	</div>
+	          </div>
+	          
+	          
+	          
+	          <div class="cta-modal-2  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1>Share it if you like it</h1>
+	          	<br><br>
+	          </div>
+	          <div class="cta-modal-3  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1>Customary cat!</h1>
+	          	<img src="http://placekitten.com/g/200/300" width="300" alt="">
+	          	<p>You found me :)</p>
+	          </div>
+	          <div class="cta-modal-4  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          
+	          	<h1>Hierarchical timing</h1>
+	          	<div class="quote-box">
+	          		<div class="quote-box__bubble">When building a transition, consider the order and timing of the elements' movement. Ensure that motion supports the information hierarchy, conveying what content is most important by creating a path for the eye to follow.</div>
+	          		<a href="http://www.google.co.in/design/spec/animation/meaningful-transitions.html#meaningful-transitions-hierarchical-timing">Google Material design</a>
+	          	</div>
+	          </div>
+	          <div class="row full-row">
+	          	<h1 class="text-center">Recent Projects</h1>
+	          </div>
+	          
+	          <div class="row full-row align-middle projects">
+	          	<div class="columns small-6 large-3 quad quad-1" data-cta-target=".cta-modal-1" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          	<div class="columns small-6 large-3 quad quad-2" data-cta-target=".cta-modal-2" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          	<div class="columns small-6 large-3 quad quad-3" data-cta-target=".cta-modal-3" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          	<div class="columns small-6 large-3 quad quad-4" data-cta-target=".cta-modal-4" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          </div>
+	          
+	          
+	          <div class="cta-modal-1  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1 class="text-center modal-title">SelfUSNow</h1>
+	          
+	          	<div class="quote-box">
+	          		<div class="quote-box__bubble">
+	          			<div class="quote">"</div>
+	          			lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+	          			lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+	          			<div class="quote">"</div>
+	          		</div>
+	          	</div>
+	          </div>
+	          
+	          
+	          
+	          <div class="cta-modal-2  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1>Share it if you like it</h1>
+	          	<br><br>
+	          </div>
+	          <div class="cta-modal-3  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1>Customary cat!</h1>
+	          	<img src="http://placekitten.com/g/200/300" width="300" alt="">
+	          	<p>You found me :)</p>
+	          </div>
+	          <div class="cta-modal-4  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          
+	          	<h1>Hierarchical timing</h1>
+	          	<div class="quote-box">
+	          		<div class="quote-box__bubble">When building a transition, consider the order and timing of the elements' movement. Ensure that motion supports the information hierarchy, conveying what content is most important by creating a path for the eye to follow.</div>
+	          		<a href="http://www.google.co.in/design/spec/animation/meaningful-transitions.html#meaningful-transitions-hierarchical-timing">Google Material design</a>
+	          	</div>
+	          </div>
+	          <div class="row full-row">
+	          	<h1 class="text-center">Recent Projects</h1>
+	          </div>
+	          
+	          <div class="row full-row align-middle projects">
+	          	<div class="columns small-6 large-3 quad quad-1" data-cta-target=".cta-modal-1" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          	<div class="columns small-6 large-3 quad quad-2" data-cta-target=".cta-modal-2" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          	<div class="columns small-6 large-3 quad quad-3" data-cta-target=".cta-modal-3" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          	<div class="columns small-6 large-3 quad quad-4" data-cta-target=".cta-modal-4" data-disable-scroll=true>
+	          		<p class=" "> <br> </p>
+	          		<p class="project-title text-center white-txt">Project</p>
+	          		<p class=" "> <br> </p>
+	          	</div>
+	          </div>
+	          
+	          
+	          <div class="cta-modal-1  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1 class="text-center modal-title">SelfUSNow</h1>
+	          
+	          	<div class="quote-box">
+	          		<div class="quote-box__bubble">
+	          			<div class="quote">"</div>
+	          			lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+	          			lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+	          			<div class="quote">"</div>
+	          		</div>
+	          	</div>
+	          </div>
+	          
+	          
+	          
+	          <div class="cta-modal-2  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1>Share it if you like it</h1>
+	          	<br><br>
+	          </div>
+	          <div class="cta-modal-3  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          	<h1>Customary cat!</h1>
+	          	<img src="http://placekitten.com/g/200/300" width="300" alt="">
+	          	<p>You found me :)</p>
+	          </div>
+	          <div class="cta-modal-4  modal  ">
+	          	<span class="modal-close-btn"></span>
+	          
+	          	<h1>Hierarchical timing</h1>
+	          	<div class="quote-box">
+	          		<div class="quote-box__bubble">When building a transition, consider the order and timing of the elements' movement. Ensure that motion supports the information hierarchy, conveying what content is most important by creating a path for the eye to follow.</div>
+	          		<a href="http://www.google.co.in/design/spec/animation/meaningful-transitions.html#meaningful-transitions-hierarchical-timing">Google Material design</a>
+	          	</div>
+	          </div>
+	        </div>
+	        <!-- end #inner-content -->
+	      </div>
+	      <!-- end #content -->
+
+	    </div>
+	    <!-- end .main-content -->
+	  </div>
+	  <!-- end .off-canvas-wrapper-inner -->
+	</div>
+	
+    <script src="assets/js/app.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-73927503-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+  </body>
+</html>
